@@ -1,14 +1,24 @@
 #nav-bar{
     background: #D6E4E5 !important;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 15px;
+}
+#logo{
+    font-size: 24px;
+    font-weight: 500;
+    color: #497174 !important;
+    transition: 0.2s ease-in-out;
+    margin-right: 50px;
 }
 #clr{
     color: #497174 !important;
     font-size: 18px;
     font-weight: 500;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
 }
 #clr:hover{
     color: #EB6440 !important;
 }
-
