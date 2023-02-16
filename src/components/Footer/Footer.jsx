@@ -50,7 +50,9 @@ function Footer() {
             <img src={instagram} alt="" /> 
             <img src={twitter} alt="" />
           </div>
+          <div className="download-btns">
           <img src={download}alt=""/>
+          </div>
         </div>
     </div>
       <div className="footer-bottom">
