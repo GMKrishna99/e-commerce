@@ -11,7 +11,8 @@ import SignIn from './components/SignIn/SignIn';
 
 import { BrowserRouter as Router, 
   Route , 
-  Routes} from 'react-router-dom';
+  Routes,
+  Link} from 'react-router-dom';
 
 function App() {
   
@@ -19,8 +20,8 @@ function App() {
   return (
     <div className="App">
       {/* Routes */}
-        <NavBar/>
         <Router>
+        <NavBar/>
          <Routes>
             <Route path='/' element={<ItemList/>}/>
             <Route path='/product/:id' element={<Product/>}/>
