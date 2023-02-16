@@ -31,6 +31,7 @@
     color: #497174;
     width: 80%;
     outline: none;
+    background-color: transparent;
 }
 .contact-form input:focus{
     border: 1px solid transparent;
@@ -54,6 +55,13 @@ input::-webkit-inner-spin-button {
     width: 80%;
     height: 200px;
     resize: none;
+    background-color: transparent;
+
+}
+.contact-form label{
+    font-size: 16px;
+    color: #497174;
+    font-weight: 500;
 }
 .contact-form textarea:focus{
     border: 1px solid transparent;
