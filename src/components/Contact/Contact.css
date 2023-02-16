@@ -19,9 +19,10 @@
 .contact-form{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
 }
 .contact-form input{
+    margin: auto;
     margin-top: 7px;
     margin-bottom: 10px;
     padding: 10px;
@@ -29,7 +30,7 @@
     border: 1px solid #497174;
     font-size: 16px;
     color: #497174;
-    width: 80%;
+    width: 50%;
     outline: none;
     background-color: transparent;
 }
@@ -44,6 +45,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 .contact-form textarea{
+    margin: auto;
     margin-top: 7px;
     margin-bottom: 10px;
     padding: 10px;
@@ -52,13 +54,14 @@ input::-webkit-inner-spin-button {
     outline: none;
     font-size: 16px;
     color: #497174;
-    width: 80%;
+    width: 50%;
     height: 200px;
     resize: none;
     background-color: transparent;
 
 }
 .contact-form label{
+    margin-left: 25%;
     font-size: 16px;
     color: #497174;
     font-weight: 500;
@@ -69,8 +72,9 @@ input::-webkit-inner-spin-button {
     box-shadow: #EB6440 0px 0px 0px 3px;
 }
 .contact-form button{
+    margin: auto;
     margin-top: 10px;
-    width: 80%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #497174;
