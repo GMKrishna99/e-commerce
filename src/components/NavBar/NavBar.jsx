@@ -3,12 +3,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import clicktocartlogo from '../../../src/assets/logo.png'
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id='nav-bar'>
       <Container>
-        <Navbar.Brand href="#home" id='logo'>Click To Cart</Navbar.Brand>
+        <Navbar.Brand href="/" id='logo'>
+          <img src={clicktocartlogo} alt="" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
