@@ -13,14 +13,13 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features" id='clr'>About</Nav.Link>
-            <Nav.Link href="#pricing" id='clr'>Contact</Nav.Link>
+            <Link to="/" id='clr'>Home</Link> &nbsp;
+            <Link to="/about" id='clr'>About</Link> &nbsp;
+            <Link to="/contact" id='clr'>Contact</Link> &nbsp;
           </Nav>
           <Nav>
-            <Nav.Link href="#deets" id='clr'>Sign Up</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" id='clr'>
-              LogIn
-            </Nav.Link>
+            <Link to="/signup" id='clr'>SignUp</Link>&nbsp;
+            <Link to="/signin" id='clr'>SignIn</Link>&nbsp;
           </Nav>
         </Navbar.Collapse>
       </Container>
