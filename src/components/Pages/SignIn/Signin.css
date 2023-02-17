@@ -1,0 +1,61 @@
+.signin-header {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.signin-form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -150px;
+}
+.signin-form form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#inp{
+    height: 50px;
+    border-radius: 5px;
+    border: 1.5px solid #497174;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    outline: none;
+    background-color: transparent;
+}
+#inp:focus{
+    border: 1px solid transparent;
+    box-shadow: #EB6440 0px 0px 0px 3px;
+}
+#btn-s{
+    height: 50px;
+    border-radius: 5px;
+    background-color: #EB6440;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#btn-s:hover{
+    background-color: #d15837;
+
+}
+#label
+{
+    color: #497174;
+    font-size: .9rem;
+    font-weight: 600;
+}
+#label-forgot{
+    color: #497174b1;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 0px
+}

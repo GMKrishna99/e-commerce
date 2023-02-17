@@ -1,9 +1,37 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import './Signin.css'
 
-function SignIn() {
+function Signin() {
   return (
-    <div>SignIn</div>
+    <Container>
+      <div className='signin-header'>
+        <h1>
+          Sign in
+        </h1>
+      </div>
+
+      <div className="signin-form">
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label id='label'>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" id='inp' />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label id='label'>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" id='inp' />
+            <Form.Label id='label-forgot'>! Forgot Password</Form.Label>
+          </Form.Group>
+          <Button variant="primary" type="submit" id='btn-s'>
+            Submit
+          </Button>
+        </Form>
+      </div>
+    </Container>
   )
 }
 
-export default SignIn
+export default Signin
