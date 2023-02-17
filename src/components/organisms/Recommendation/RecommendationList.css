@@ -1,0 +1,33 @@
+.recommendation-section{
+    background-color: #d6e4e588;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+.recommendation-list{
+    margin-top: 30px;
+    display:flex;
+    overflow-x: auto;
+    padding: 1rem ;
+}
+.recommendation-list-slider{
+    display: flex;
+    gap: 1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  .recommendation-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+  }
+  h4{
+    margin-top: 20px;
+    color: #EB6440;
+    font-size: 25px;
+    font-weight: 500;
+  }
