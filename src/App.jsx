@@ -1,21 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import NavBar from './components/molecules/NavBar/NavBar';
-import ItemList from './components/organisms/ItemList/ItemList';
 import Footer from './components/molecules/Footer/Footer';
-import Product from './Product/Product';
 import About from './components/Pages/About/About';
 import Contact from './components/Pages/Contact/Contact';
 import SignUp from './components/Pages/Signup/SignUp';
 import SignIn from './components/Pages/SignIn/SignIn';
+import ProductDetail from './components/Pages/Product/ProductDetail';
 
 import { BrowserRouter as Router, 
   Route , 
   Switch,
-  Link,
 } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
-
 function App() {
   
 
@@ -40,8 +37,8 @@ function App() {
               <SignIn/>
             </Route>
             <Route path="/product/:id">
-              <Product/>
-            </Route>    
+            <ProductDetail/>
+          </Route>
          </Switch>
       </Router>
         <Footer/>
