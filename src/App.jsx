@@ -4,10 +4,10 @@ import NavBar from './components/NavBar/NavBar';
 import ItemList from './components/ItemList/ItemList';
 import Footer from './components/Footer/Footer';
 import Product from './Product/Product';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import SignUp from './components/SignUp/SignUp';
-import SignIn from './components/SignIn/SignIn';
+import About from './components/Pages/About/About';
+import Contact from './components/Pages/Contact/Contact';
+import SignUp from './components/Pages/Signup/SignUp';
+import SignIn from './components/Pages/SignIn/SignIn';
 
 import { BrowserRouter as Router, 
   Route , 
