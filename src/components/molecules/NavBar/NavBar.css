@@ -18,3 +18,29 @@
 #clr:hover{
     color: #EB6440 !important;
 }
+#cart{
+    color: #497174 !important;
+    transition: 0.2s ease-in-out;
+    margin-top: -2px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+#cart svg{
+    width: 35px
+}
+#cart:hover{
+    color: #EB6440 !important;
+}
+#badge{
+    position: absolute;
+    background: #EB6440 !important;
+    color: #fff !important;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px;
+    margin-left: 5px;
+    top: -10px;
+    right: -10px;
+}
