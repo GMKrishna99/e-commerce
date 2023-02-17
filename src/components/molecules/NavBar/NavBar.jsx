@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import clicktocartlogo from '../../../src/assets/logo.png'
+import clicktocartlogo from '../../../../src/assets/logo.png'
 
 function NavBar() {
   return (

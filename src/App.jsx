@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/molecules/NavBar/NavBar';
 import ItemList from './components/ItemList/ItemList';
-import Footer from './components/Footer/Footer';
+import Footer from './components/molecules/Footer/Footer';
 import Product from './Product/Product';
 import About from './components/Pages/About/About';
 import Contact from './components/Pages/Contact/Contact';

@@ -1,9 +1,9 @@
 import React from 'react'
-import clicktocartlogo from '../../../src/assets/logo.png'
-import facebook from '../../../src/assets/social icons/facebook.png'
-import instagram from '../../../src/assets/social icons/instagram.png'
-import twitter from '../../../src/assets/social icons/twitter.png'
-import download from '../../../src/assets/download.png'
+import clicktocartlogo from '../../../../src/assets/logo.png'
+import facebook from '../../../../src/assets/social icons/facebook.png'
+import instagram from '../../../../src/assets/social icons/instagram.png'
+import twitter from '../../../../src/assets/social icons/twitter.png'
+import download from '../../../../src/assets/download.png'
 import './Footer.css'
 
 function Footer() {
