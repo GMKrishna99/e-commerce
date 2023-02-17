@@ -21,7 +21,7 @@ function NavBar() {
           </Nav>
           <Nav>
             <Link to="/signup" id='clr'>SignUp</Link>&nbsp;
-            <Link to="/signin" id='clr'>SignIn</Link>&nbsp;
+            <Link to="/signin" id='clr'>Login</Link>&nbsp;
           </Nav>
         </Navbar.Collapse>
       </Container>
