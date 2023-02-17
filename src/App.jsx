@@ -14,6 +14,7 @@ import { BrowserRouter as Router,
   Switch,
   Link,
 } from 'react-router-dom';
+import Home from './components/Pages/Home/Home';
 
 function App() {
   
@@ -24,7 +25,7 @@ function App() {
         <NavBar/>
           <Switch>
             <Route exact path="/">
-              <ItemList/>
+              <Home/>
             </Route>
             <Route path="/about">
               <About/>
