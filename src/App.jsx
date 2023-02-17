@@ -11,26 +11,38 @@ import SignIn from './components/SignIn/SignIn';
 
 import { BrowserRouter as Router, 
   Route , 
-  Routes,
-  Link} from 'react-router-dom';
+  Switch,
+  Link,
+} from 'react-router-dom';
 
 function App() {
   
 
   return (
     <div className="App">
-      {/* Routes */}
-        <Router>
+      <Router>
         <NavBar/>
-         <Routes>
-            <Route path='/' element={<ItemList/>}/>
-            <Route path='/product/:id' element={<Product/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/signup' element={<SignUp/>}/>
-            <Route path='/signin' element={<SignIn/>}/>
-         </Routes>
-        </Router>
+          <Switch>
+            <Route exact path="/">
+              <ItemList/>
+            </Route>
+            <Route path="/about">
+              <About/>
+            </Route>
+            <Route path="/contact">
+              <Contact/>
+            </Route>
+            <Route path="/signup">
+              <SignUp/>
+            </Route>
+            <Route path="/signin">
+              <SignIn/>
+            </Route>
+            <Route path="/product/:id">
+              <Product/>
+            </Route>    
+         </Switch>
+      </Router>
         <Footer/>
     </div>
   )
