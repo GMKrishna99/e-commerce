@@ -32,13 +32,13 @@ function ProductDetail() {
                 <div className='product-detail_price'>
                   <div className="product-detail_price_main">
                     <p className='product-detail_price_current'>
-                      ₹ {productDetails.itemPrice * .5}
+                      ₹ {productDetails.itemPrice * 0.85}
                     </p>
                     <p className='product-detail_price_original'>
                       ₹ {productDetails.itemPrice }
                     </p>
                     <p className='product-detail_price_discount'>
-                      20% off
+                      15% off
                     </p>
                   </div>
                   <div className="product-detail_price_sub">
@@ -54,10 +54,10 @@ function ProductDetail() {
                     Built for sustainability, 3 years of Android OS & 3 years of monthly security updates.
                     </li>
                     <li>
-                    Body made with 100% recycled aluminum and 65% recycled plastic.                    </li>
+                    Body made with 100% recycled aluminum and 65% recycled plastic.</li>
                     <li>
                     Features a breathtaking 6.43” FHD+ AMOLED 90Hz display.
-Our best PureView photography experience yet with a 50MP OIS camera and AI technology. Capture stunning ultrawide-angle landscapes and vibrant snaps after sundown.
+                    Our best PureView photography experience yet with a 50MP OIS camera and AI technology. Capture stunning ultrawide-angle landscapes and vibrant snaps after sundown.
                     </li>
                     <li>
                     2-day battery life will keep you going and going, with super-fast 33W charging support
