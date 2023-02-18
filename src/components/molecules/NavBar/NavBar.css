@@ -44,3 +44,6 @@
     top: -10px;
     right: -10px;
 }
+.navbar-toggler-icon{
+    color: #EB6440 !important;
+}

@@ -13,9 +13,13 @@ import { BrowserRouter as Router,
   Switch,
 } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
+import Cart from './components/Pages/Cart/Cart';
 function App() {
-  
+  const [cartList, setCartList] = React.useState([]);
 
+  const addToCart = (item) => {
+    setCartList([...cartList, item]);
+  }
   return (
     <div className="App">
       <Router>
@@ -38,7 +42,11 @@ function App() {
             </Route>
             <Route path="/product/:id">
             <ProductDetail/>
+             addTocart={addToCart}
           </Route>
+          <Route path="/cart">
+            <Cart/>
+          </Route>  
          </Switch>
       </Router>
         <Footer/>
