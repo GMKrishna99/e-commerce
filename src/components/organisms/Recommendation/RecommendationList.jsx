@@ -12,7 +12,7 @@ function RecommendationList() {
       .then(response => {
         let itemsList = [];
         for (let key in response.data){
-          itemsList.push(response.data[key])
+          itemsList.push({...response.data[key] , id: key})
         }
         setItemsList(itemsList)
       })  
