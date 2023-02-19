@@ -9,14 +9,14 @@ function ItemCard({itemImg, itemPrice, itemTitle, itemDes, itemPlace, itemDate})
         </div>
         <div className='item-card-info'>
             <div className='item-card-price'>
-                {itemPrice}
+            ₹ {itemPrice}/-
             </div>
         
         <div className='item-card-title'>
             {itemTitle}
          </div>  
         <div className='item-card-des'>
-            {itemDes}
+            {/* {itemDes} */}
         </div> 
         <div className="item-card-footer">
             <div className='item-card-place'>

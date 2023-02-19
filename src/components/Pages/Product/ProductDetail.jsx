@@ -31,13 +31,13 @@ function ProductDetail({addToCart}) {
                 <div className='product-detail_price'>
                   <div className="product-detail_price_main">
                     <p className='product-detail_price_current'>
-                      ₹ {productDetails.itemPrice * 0.8}
+                      ₹ {productDetails.itemPrice * 0.9}/-
                     </p>
                     <p className='product-detail_price_original'>
-                      ₹ {productDetails.itemPrice }
+                      ₹ {productDetails.itemPrice }/-
                     </p>
                     <p className='product-detail_price_discount'>
-                      15% off
+                      -9% off
                     </p>
                   </div>
                   <div className="product-detail_price_sub">
