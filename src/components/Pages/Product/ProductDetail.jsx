@@ -50,19 +50,19 @@ function ProductDetail({addToCart}) {
                 <div className='product-detail_features'>
                   <ul>
                     <li>
-                    Built for sustainability, 3 years of Android OS & 3 years of monthly security updates.
+                    {productDetails.Des1}
                     </li>
                     <li>
-                    Body made with 100% recycled aluminum and 65% recycled plastic.</li>
-                    <li>
-                    Features a breathtaking 6.43” FHD+ AMOLED 90Hz display.
-                    Our best PureView photography experience yet with a 50MP OIS camera and AI technology. Capture stunning ultrawide-angle landscapes and vibrant snaps after sundown.
+                    {productDetails.Des2}
                     </li>
                     <li>
-                    2-day battery life will keep you going and going, with super-fast 33W charging support
+                    {productDetails.Des3}
                     </li>
                     <li>
-                    For and on behalf of HMD Mobile India Private Limited, Pioneer Urban Square Complex, No 510 5th Floor, Tower C, Golf Course Extension Road, Sector 62, Gurgaon, Haryana, 122102, India
+                    {productDetails.Des4}
+                    </li>
+                    <li>
+                    {productDetails.Des5}
                     </li>
                   </ul>
                 </div>

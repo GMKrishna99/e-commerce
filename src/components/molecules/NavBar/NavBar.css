@@ -36,13 +36,9 @@
     position: absolute;
     background: #EB6440 !important;
     color: #fff !important;
-    border-radius: 100%;
-    font-size: 14px;
-    padding: 7px;
-    font-weight: 600;
-    margin-left: 5px;
-    top: -10px;
-    right: -10px;
+    left: 18px;
+    top: -7px;
+
 }
 .navbar-toggler-icon{
     color: #EB6440 !important;
