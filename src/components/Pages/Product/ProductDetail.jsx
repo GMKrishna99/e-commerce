@@ -1,24 +1,64 @@
-import React , {useEffect} from 'react'
+import React , {useEffect , useState} from 'react'
 import './ProductDetail.css'
 import { useParams } from 'react-router-dom'
 import { Col, Container, Row } from 'react-bootstrap';
 import axios from 'axios';
 
 function ProductDetail({addToCart}) {
-    let { id } = useParams();
-    const [productDetails, setProductDetails] = React.useState('');
-    useEffect(() => {
-        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/tv/${id}.json`) // get product details from firebase
-        .then(response => {
-          console.log(response.data);
-          setProductDetails(response.data)
+  let { id } = useParams();
+     const [productDetails, setProductDetails] = useState('');
+      useEffect (() =>{
+        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/books/${id}.json`)
+        .then(res => {
+          if(res.data===null){
+            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/c2c/${id}.json`)
+            .then(res => {
+              if(res.data===null){
+                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/games/${id}.json`)
+                .then(res => {
+                  if(res.data===null){
+                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/gym/${id}.json`)
+                    .then(res =>{
+                      if(res.data===null){
+                        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/laptops/${id}.json`)
+                        .then(res =>{
+                          if(res.data===null){
+                            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/mobiles/${id}.json`)
+                            .then(res =>{
+                              if(res.data===null){
+                                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/new-releases/${id}.json`)
+                                .then(res =>{
+                                  if(res.data === null){
+                                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/tv/${id}.json`)
+                                    .then(res =>{
+                                      setProductDetails(res.data)})
+                                  }
+                                  else{setProductDetails(res.data)}
+                                })
+                              }
+                              else{setProductDetails(res.data)}
+                            })
+                          }
+                          else{setProductDetails(res.data)}
+                        })
+                      }
+                      else{setProductDetails(res.data)}
+                    })
+                  }
+                  else{setProductDetails(res.data)}
+                })
+              }
+              else{setProductDetails(res.data)}
+            })
+          }
+          else{setProductDetails(res.data)}
         })
-    }, [])
+      })
   return (
     <Container>
       {
         productDetails === ''
-        ? 'Loading...'
+        ? <h1>Loading...</h1>
         : (
             <Row className='product-detail-row'>
               <Col className='product-detail-col-l'>
