@@ -1,14 +1,14 @@
 import React from 'react'
+import './ItemListGym.css'
 import { Container } from 'react-bootstrap'
 import ItemCard from '../../molecules/itemcard/ItemCard'
-import './ItemList.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-function ItemList() {
+function ItemListGym() {
   const [itemsList, setItemsList] = React.useState([]);
    React.useEffect( () => {
-     axios.get("https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/new-releases.json")
+     axios.get("https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/gym.json")
       .then(response => {
         let itemsList = [];
         for (let key in response.data){
@@ -20,10 +20,9 @@ function ItemList() {
   return (
     <div>
       <Container>
-          <div className="itemlist-container">
-          <div className="heading"><h1>New Arrivals</h1></div>
-        <div className="list-item-container">
-        <div className="item-list">
+          <div className="item-list-gym-container">
+          <div className="heading"><h1>Home Gym Items</h1></div>
+        <div className="item-list-gym">
             {
               itemsList.length === 0 
               ? <h2>No items Found</h2>:
@@ -38,11 +37,10 @@ function ItemList() {
               ))
             }
         </div>
-        </div>
           </div>
       </Container>
     </div>
   )
 }
 
-export default ItemList
+export default ItemListGym
