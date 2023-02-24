@@ -8,13 +8,12 @@ function ProductDetail({addToCart}) {
     let { id } = useParams();
     const [productDetails, setProductDetails] = React.useState('');
     useEffect(() => {
-        axios.get(`https://react-app-37960-default-rtdb.asia-southeast1.firebasedatabase.app/c2c/${id}.json`)
+        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/tv/${id}.json`) // get product details from firebase
         .then(response => {
           console.log(response.data);
           setProductDetails(response.data)
         })
     }, [])
-
   return (
     <Container>
       {
@@ -31,13 +30,13 @@ function ProductDetail({addToCart}) {
                 <div className='product-detail_price'>
                   <div className="product-detail_price_main">
                     <p className='product-detail_price_current'>
-                      ₹ {productDetails.itemPrice * 0.9}/-
+                      ₹ {productDetails.itemPrice}/-
                     </p>
                     <p className='product-detail_price_original'>
-                      ₹ {productDetails.itemPrice }/-
+                      ₹ {productDetails.itemMrp }/-
                     </p>
                     <p className='product-detail_price_discount'>
-                      -9% off
+                      {productDetails.itemDiscount}
                     </p>
                   </div>
                   <div className="product-detail_price_sub">

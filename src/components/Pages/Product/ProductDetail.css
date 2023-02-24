@@ -24,6 +24,7 @@
     font-weight: 600;
     color:#EB6440 ;
     margin-top: 100px;
+margin-left: -5px;
 }
 .product-detail_desc {
     font-size: 16px;
@@ -49,7 +50,7 @@
 }
 .product-detail_price_original {
     font-size: 16px;
-    color: #464646;
+    color: red;
     text-decoration: line-through;
 }
 .product-detail_price_discount {
