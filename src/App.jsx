@@ -48,8 +48,10 @@ function App() {
               addToCart={addToCart}
             />
           </Route>
-          <Route path="">
-            <Cart/>
+          <Route path="/cart">
+            <Cart
+              cartList={cartList}
+            />
           </Route>  
          </Switch>
       </Router>
