@@ -47,9 +47,8 @@ function App() {
             <ProductDetail
               addToCart={addToCart}
             />
-            
           </Route>
-          <Route path="/cart">
+          <Route path="">
             <Cart/>
           </Route>  
          </Switch>
