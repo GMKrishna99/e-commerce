@@ -1,7 +1,7 @@
 import React from 'react'
 import './ItemCard.css'
 
-function ItemCard({itemImg, itemPrice, itemTitle, itemDes, itemPlace, itemDate}) {
+function ItemCard({itemImg, itemPrice, itemTitle, itemPlace, itemDate}) {
   return (
     <div className='item-card-container'>
         <div className='item-card-img'>

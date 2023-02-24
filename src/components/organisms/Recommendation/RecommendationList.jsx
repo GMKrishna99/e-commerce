@@ -34,7 +34,6 @@ function RecommendationList() {
                   itemImg={item.itemImg}
                   itemPrice={item.itemPrice}
                   itemTitle={item.itemTitle}
-                  itemDes={item.itemDes}
                 />
                 </Link>
               ))

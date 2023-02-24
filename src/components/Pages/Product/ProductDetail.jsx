@@ -8,28 +8,28 @@ function ProductDetail({addToCart}) {
   let { id } = useParams();
      const [productDetails, setProductDetails] = useState('');
       useEffect (() =>{
-        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/books/${id}.json`)
+        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/c2c/${id}.json`)
         .then(res => {
           if(res.data===null){
-            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/c2c/${id}.json`)
+            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/new-releases/${id}.json`)
             .then(res => {
               if(res.data===null){
-                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/games/${id}.json`)
+                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/books/${id}.json`)
                 .then(res => {
                   if(res.data===null){
-                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/gym/${id}.json`)
+                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/tv/${id}.json`)
                     .then(res =>{
                       if(res.data===null){
-                        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/laptops/${id}.json`)
+                        axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/mobiles/${id}.json`)
                         .then(res =>{
                           if(res.data===null){
-                            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/mobiles/${id}.json`)
+                            axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/laptops/${id}.json`)
                             .then(res =>{
                               if(res.data===null){
-                                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/new-releases/${id}.json`)
+                                axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/gym/${id}.json`)
                                 .then(res =>{
                                   if(res.data === null){
-                                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/tv/${id}.json`)
+                                    axios.get(`https://click-to-cart-e-commerce-default-rtdb.asia-southeast1.firebasedatabase.app/games/${id}.json`)
                                     .then(res =>{
                                       setProductDetails(res.data)})
                                   }

@@ -20,6 +20,9 @@ function App() {
   const addToCart = (item) => {
     setCartList([...cartList, item])
   }
+  const removeFromCart = (item) => {
+    setCartList(cartList.filter((cartItem) => cartItem !== item))
+  }
 
   return (
     <div className="App">
@@ -51,6 +54,7 @@ function App() {
           <Route path="/cart">
             <Cart
               cartList={cartList}
+              removeFromCart={removeFromCart}
             />
           </Route>  
          </Switch>
